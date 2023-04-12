@@ -1,0 +1,8 @@
+#000000
+black
+
+#333333
+dark gray
+
+#b3b3b3
+light gray

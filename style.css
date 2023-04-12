@@ -1,0 +1,88 @@
+/* General Styles */
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Use the font for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder; /* Use the 700 weight for bold */
+}
+
+/* Use the font for other elements as needed */
+p, a, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Use the 400 weight for normal */
+}
+
+
+body {
+  font-size: 16px;
+  color: #333;
+  margin-left: 5%;
+  background-size: cover;
+  background: fixed;
+  overflow-x: hidden;
+}
+
+#hero{
+    font-size: 50px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    margin-left: 100%;
+    padding: 0;
+    display: flex; /* Use flexbox to create a horizontal layout */
+  }
+  
+  nav li {
+    margin-right: 20px; /* Add some spacing between the items */
+  }
+  
+  nav li:last-child {
+    margin-right: 0; /* Remove the margin from the last item */
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    background-color: #eee;
+  }
+  
+/* Main Content Styles */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+

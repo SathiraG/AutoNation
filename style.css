@@ -28,6 +28,21 @@ body {
     font-size: 50px;
 }
 
+#vehicles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+#vehicles-img{
+  border: white 1px;
+  border-radius: 25px;
+
+  width: 450px;
+  height: auto;
+}
+
 a {
   color: #0066cc;
   text-decoration: none;

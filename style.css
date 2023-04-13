@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 /* Use the font for headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, th {
   font-family: 'Roboto', sans-serif;
   font-weight: bolder; /* Use the 700 weight for bold */
 }
@@ -22,6 +22,17 @@ body {
   background-size: cover;
   background: fixed;
   overflow-x: hidden;
+}
+
+button{
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #686868;
+  color: white;
+  transition: 0.3s;
 }
 
 #hero{
@@ -98,15 +109,15 @@ nav ul {
     margin: 0;
     margin-left: 100%;
     padding: 0;
-    display: flex; /* Use flexbox to create a horizontal layout */
+    display: flex;
   }
   
   nav li {
-    margin-right: 20px; /* Add some spacing between the items */
+    margin-right: 20px; 
   }
   
   nav li:last-child {
-    margin-right: 0; /* Remove the margin from the last item */
+    margin-right: 0; 
   }
   
   nav a {
@@ -139,3 +150,63 @@ footer p {
   margin: 0;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    margin-right: 10%;
+  }
+  
+  th {
+    background-color: #686868;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    font-weight: lighter; /* Use the 400 weight for normal */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #e2e2e2;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    
+    th {
+      text-align: center;
+    }
+    
+    th, td {
+      border: none;
+    }
+    
+    tr {
+      margin: 1rem 0;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    tr:last-child {
+      border-bottom: none;
+    }
+    
+    td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: inline-block;
+      width: 100px;
+      margin-right: 1rem;
+    }
+  }

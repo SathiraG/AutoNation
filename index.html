@@ -15,10 +15,11 @@
         <div style="margin-top: 22px;">
             <nav>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact</a></li>
+                  
+                  <li><a href="#vehicles">Vehicles</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#payment">Payment</a></li>
+                  <li><a href="#contact-us">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,11 +31,10 @@
 
 
         <div style="min-width: 40%;">
-            <!-- <h1>Premium<br>Car Rental<br>in New York</h1> -->
             <h1 style="color: #686868; font-size: 130px; line-height: 0.8;">Find Your<br> 
                 <span style="color: #333333; font-size: 160px;">Dream Car</span> <br>With Us</h1>
         </div>
-        <div>
+        <div style="min-width: 20%;">
             <img src="img/hero.png">
         </div>
     </div>
@@ -44,12 +44,17 @@
         <h1>Our vehicles</h1>
     </div>
 
-        <div>
-            <img src="img/benz2.jpg" id="vehicles-img" alt="">
-            <img src="img/lambo.jpg" id="vehicles-img" alt="">
-            <img src="img/rangerover.jpg" id="vehicles-img" alt="">
-            <img src="img/benz2.jpg" id="vehicles-img" alt="">
-            <img src="img/benz2.jpg" id="vehicles-img" alt="">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div>
+                <img src="img/benz2.jpg" id="vehicles-img" alt="">
+                <img src="img/lambo.jpg" id="vehicles-img" alt="">
+                <img src="img/rangerover.jpg" id="vehicles-img" alt="">
+                
+            </div>
+            <div>
+                <img src="img/bmw2.jpg" id="vehicles-img" alt="">
+                <img src="img/benz.jpg" id="vehicles-img" alt="">
+            </div>
         </div>
     
     
@@ -69,54 +74,79 @@
         </div>
         
 
-        <div>
-            
+    <div id="payment">
+        <h1>Pay Your Way</h1>
+        <p style="color: #686868; font-size: 30px; margin-top: -25px;
+        margin-bottom: 50px;">Discover the Perfect Payment Plan for You<br>
+            with Our Custom Payment Solutions</p>
+        <table>
+        <thead>
+            <tr>
+            <th>Payment Option</th>
+            <th>Description</th>
+            <th>Apply Now</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td data-label="Payment Option">0% Financing</td>
+            <td data-label="Description">Pay no interest for 12 months on approved credit</td>
+            <td data-label="Apply Now"><button onclick="applyNow()">Apply Now</button></td>
+            </tr>
+            <tr>
+            <td data-label="Payment Option">Low Monthly Payments</td>
+            <td data-label="Description">Spread your payments out over 36 months with competitive rates</td>
+            <td data-label="Apply Now"><button onclick="applyNow()">Apply Now</button></td>
+            </tr>
+            <tr>
+            <td data-label="Payment Option">No Payments for 90 Days</td>
+            <td data-label="Description">Defer your payments for 3 months with no interest or penalties</td>
+            <td data-label="Apply Now"><button onclick="applyNow()">Apply Now</button></td>
+            </tr>
+        </tbody>
+        </table>
 
-            <h1>Pay Your Way</h1>
-            <p style="color: #686868;">Custom Payment Solutions</p>
-<table>
-  <thead>
-    <tr>
-      <th>Payment Option</th>
-      <th>Description</th>
-      <th>Apply Now</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="Payment Option">0% Financing</td>
-      <td data-label="Description">Pay no interest for 12 months on approved credit</td>
-      <td data-label="Apply Now"><button onclick="applyNow()">Apply Now</button></td>
-    </tr>
-    <tr>
-      <td data-label="Payment Option">Low Monthly Payments</td>
-      <td data-label="Description">Spread your payments out over 36 months with competitive rates</td>
-      <td data-label="Apply Now"><button onclick="applyNow()">Apply Now</button></td>
-    </tr>
-    <tr>
-      <td data-label="Payment Option">No Payments for 90 Days</td>
-      <td data-label="Description">Defer your payments for 3 months with no interest or penalties</td>
-      <td data-label="Apply Now"><button onclick="applyNow()">Apply Now</button></td>
-    </tr>
-  </tbody>
-</table>
-
-        </div>
+     </div>
 
 
     </div>
     
-    <h2>Welcome to AutoNation</h2>
-    <p>We offer a wide selection of cars at affordable prices. Browse our inventory or visit us in person to find the car of your dreams.</p>
-  <footer>
-    <p>&copy; AutoNation 2023</p>
-  </footer>
 
-
+    <footer>
+        <div id="contact-us">
+            <div id="container">
+                <div id="footer-row">
+                    <div id="footer-column">
+                    <h3 id="footer-title">About Us</h3>
+                    <p>Follow us on social media: <br>
+                        <a href="#" target="_blank">Facebook</a> | 
+                        <a href="#" target="_blank">Twitter</a> | 
+                        <a href="#" target="_blank">Instagram</a>
+                    </p>
+                    </div>
+                    <div id="footer-column">
+                    <h3 id="footer-title">Contact Us</h3>
+                    <p id="footer-text">123 Main Street, Colombo, Sri Lanka</p>
+                    <p id="footer-text"><a href="tel:+1234567890">+94 123456789</a></p>
+                    <p id="footer-text"><a href="mailto:contact@AutoNation.com">contact@AutoNation.com</a></p>
+                    </div>
+                    <div id="footer-column">
+                    <h3 id="footer-title">Subscribe to Our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-input" placeholder="Enter your email">
+                        <button type="submit" id="newsletter-button">Subscribe</button>
+                    </form>
+                    </div>
+                </div>
+                <div id="footer-row">
+                    <div id="footer-column">
+                    <p id="footer-text">&copy; 2023 AutoNation. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
-
-
-
 
     <script src="script.js"></script>
 </body>

@@ -35,8 +35,41 @@ button:hover{
   transition: 0.3s;
 }
 
+hr{
+  margin-top: 75px;
+  width: auto;
+  height: 5px solid gray;
+}
+
 #hero{
     font-size: 50px;
+}
+
+@keyframes move-text {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#heroText{
+  animation: move-text 1s ease-out;
+}
+
+@keyframes move-car {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to the car image */
+#heroImg {
+  animation: move-car 1s ease-out;
 }
 
 #vehicles{

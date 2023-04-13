@@ -6,3 +6,17 @@ dark gray
 
 #b3b3b3
 light gray
+
+
+<footer>
+        <div class="container">
+          <p>&copy; 2023 AutoNation. All Rights Reserved.</p>
+          <p>Address: 123 Main Street, Anytown, USA 00000</p>
+          <p>Phone: (123) 456-7890 | Email: <a href="mailto:info@yourcarsalewebsite.com">info@yourcarsalewebsite.com</a></p>
+          <p>Follow us on social media: 
+            <a href="https://www.facebook.com/yourcarsalewebsite" target="_blank">Facebook</a> | 
+            <a href="https://twitter.com/yourcarsalewebsite" target="_blank">Twitter</a> | 
+            <a href="https://www.instagram.com/yourcarsalewebsite" target="_blank">Instagram</a>
+          </p>
+        </div>
+      </footer>
